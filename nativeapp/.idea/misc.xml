@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_flutter_view.xml" value="0.29907407407407405" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_my_fragment.xml" value="0.29907407407407405" />
+        <entry key="app/src/main/res/layout/item_card.xml" value="0.29907407407407405" />
       </map>
     </option>
   </component>

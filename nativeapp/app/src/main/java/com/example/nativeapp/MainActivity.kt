@@ -43,6 +43,18 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun flutterview(view: View) {
-
+        FlutterEngine(this).let {
+            it.lifecycleChannel.appIsResumed()
+            it.navigationChannel.setInitialRoute("cell")
+            it.dartExecutor.executeDartEntrypoint(
+                DartExecutor.DartEntrypoint.createDefault()
+            )
+            FlutterEngineCache
+                .getInstance()
+                .put("flutter_view_id", it)
+        }
+        val intent = Intent()
+        intent.setClass(this, FlutterViewActivity::class.java)
+        startActivity(intent)
     }
 }
